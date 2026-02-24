@@ -4,7 +4,7 @@ const supabase = require("./supabaseClient");
 const app = express();
 
 async function getUsuarios() {
-  const { data, error } = await supabase.from("usuarios").select("*");
+  const { data, error } = await supabase.from("Usuarios").select("*");
 
   if (error) {
     throw error;
